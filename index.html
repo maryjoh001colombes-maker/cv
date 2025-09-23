@@ -1,32 +1,66 @@
 <!DOCTYPE html>
-<html lang="en"
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scaler=1,0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            position: relative;
+        }
+        
+        .photo-container {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            z-index: 10;
+        }
+        
+        .photo-container img {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 4px;
+            border: 2px solid #ddd;
+        }
+        
+        .content {
+            margin-left: 160px; /* Pour éviter que le texte soit caché par l'image */
+        }
+        
+        h1 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+        }
+        
+        p {
+            margin: 10px 0;
+            line-height: 1.5;
+        }
+        
+        strong {
+            color: #2c3e50;
+        }
+    </style>
 </head>
 <body>
-    <p>toto</p>
-    <img src="mary_avatar.png" alt="photo de Mary"
-    <p><strong>NOM</strong> : Joh</p>
-    <p><strong>PRENOM</strong> : Mary</p>
-    <P><strong>COMPETENCES : </P>
-    <ul>
-        <li>HTML</li>
-        <li>upgrade un pc</li>
-        <li>python</li>
-        <li>CSS</li>
-
-    </ul>
-    <P><strong>FORMATION : </P>
-    <ul>
-        <li><a href="lycee Turgot">https://pia.ac-paris.fr/serail/jcms/s2_271354/fr/accueil</a></li>
-        <li>cisco networking</li>
-        <li>cisco IA</li>
-        <li>PIX</li>
-
-
-    </ul>
-
+    <div class="photo-container">
+        <img src="mary_avatar" alt="photo de Mary">
+    </div>
+    
+    <div class="content">
+        <p><strong>Nom:</strong> Joh</p>
+        <p><strong>Prenom: </strong>Mary </p>
+        
+        <h1>Compétences</h1>
+        <p>Ajoutez ici vos compétences...</p>
+        
+        <h1>Formation</h1>
+        <p>Ajoutez ici votre formation...</p>
+    </div>
 </body>
-
+</html>
