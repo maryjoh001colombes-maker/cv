@@ -1,51 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="styleheet" href="style">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Station de Ski - Activités</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h1>Nos Activités</h1>
-    <img src="images/station2.jpg" alt="Station de ski 2" width="400">
-    <p>
-        Nous proposons du ski alpin, du snowboard, de la luge, et bien plus encore !<br>
-        Rejoignez nos moniteurs pour une expérience inoubliable.
-    </p>
-
-    <h2>Formulaire de Contact</h2>
-    <form id="contactForm">
-        <label for="nom">Nom :</label><br>
-        <input type="text" id="nom" name="nom"><br><br>
-
-        <label for="email">Email :</label><br>
-        <input type="email" id="email" name="email"><br><br>
-
-        <input type="submit" value="Envoyer">
-    </form>
-
-    <p id="message"></p>
-
-    <br>
-    <a href="index.html">Retour à l'accueil</a>
-
-    <script>
-        // JavaScript simple pour valider le formulaire
-        document.getElementById("contactForm").addEventListener("submit", function(event) {
-            event.preventDefault(); // Empêche l'envoi réel
-            const nom = document.getElementById("nom").value;
-            const email = document.getElementById("email").value;
-            const message = document.getElementById("message");
-
-            if(nom && email){
-                message.innerText = "Merci " + nom + " ! Nous vous contacterons bientôt à " + email + ".";
-                message.style.color = "green";
-            } else {
-                message.innerText = "Veuillez remplir tous les champs.";
-                message.style.color = "red";
-            }
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cafe Menu</title>
+    <link href="styles.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <div class="menu">
+      <main>
+        <h1>CAMPER CAFE</h1>
+        <p>Est. 2020</p>
+        <section>
+          <h2>Coffee</h2>
+          <article>
+            .flavor  {
+        margin-left: auto;
+        margin-right: auto;
+      }
+            <p>3.00</p>
+          </article>
+          <article>
+            <p>Caramel Macchiato</p>
+            <p>3.75</p>
+          </article>
+          <article>
+            <p>Pumpkin Spice</p>
+            <p>3.50</p>
+          </article>
+          <article>
+            <p>Hazelnut</p>
+            <p>4.00</p>
+          </article>
+          <article>
+            <p>Mocha</p>
+            <p>4.50</p>
+          </article>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
         });
     </script>
 </body>
